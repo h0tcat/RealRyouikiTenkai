@@ -32,10 +32,7 @@ void nori::Core::MainLoop(double level){
 	while(this->camera->read(this->cameraFrame)){
 
 
-		//cv::resize(this->cameraFrame,this->cameraFrame,cv::Size(200,200));
 		cv::cvtColor(this->cameraFrame,this->grayCameraFrame,cv::COLOR_RGB2GRAY);
-		cv::imshow("宿儺の領域展開の手を作って領域展開してみよう!",this->grayCameraFrame);
-		
 		double result=JudgeRyouikiTenkaiHand();
 		std::cout << result << std::endl;
 
