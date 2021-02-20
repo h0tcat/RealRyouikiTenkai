@@ -1,5 +1,6 @@
 #include "Core.h"
-#include <opencv4/opencv2/highgui.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/types_c.h>
 
 nori::Core::Core(std::string filepath){
 
@@ -17,7 +18,7 @@ nori::Core::Core(std::string filepath){
 	this->grayPictures.resize(this->pictureMats.size());
 	for(int i=0;i<grayPictures.size();i++){
 		cv::cvtColor(this->pictureMats.at(i),this->grayPictures.at(i),cv::COLOR_RGB2GRAY);
-		cv::resize(this->grayPictures.at(i),this->grayPictures.at(i),cv::Size(200,200));
+		//cv::resize(this->grayPictures.at(i),this->grayPictures.at(i),cv::Size(200,200));
 	}
 	this->idleCount=0;
 }
@@ -31,9 +32,9 @@ void nori::Core::MainLoop(double level){
 	while(this->camera->read(this->cameraFrame)){
 
 
-		cv::resize(this->cameraFrame,this->cameraFrame,cv::Size(200,200));
+		//cv::resize(this->cameraFrame,this->cameraFrame,cv::Size(200,200));
 		cv::cvtColor(this->cameraFrame,this->grayCameraFrame,cv::COLOR_RGB2GRAY);
-		cv::imshow("宿儺の領域展開の手を作って領域添加してみよう!",this->grayCameraFrame);
+		cv::imshow("宿儺の領域展開の手を作って領域展開してみよう!",this->grayCameraFrame);
 		
 		double result=JudgeRyouikiTenkaiHand();
 		std::cout << result << std::endl;
@@ -81,7 +82,7 @@ double nori::Core::JudgeRyouikiTenkaiHand(){
 	
 	cv::calcHist(&grayCameraFrame, imageCount, channelsToUse, cv::Mat(),this->histgram[1], dimention, binCounts, histRange);
 	
-	return cv::compareHist(this->histgram[0],this->histgram[1],cv::HISTCMP_CORREL);
+	return cv::compareHist(this->histgram[0],this->histgram[1],CV_COMP_CORREL);
 }
 
 nori::Core::~Core(){
