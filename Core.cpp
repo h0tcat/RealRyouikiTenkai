@@ -38,7 +38,7 @@ void nori::Core::MainLoop(double level){
 		double result=JudgeRyouikiTenkaiHand();
 		std::cout << result << std::endl;
 
-		if(result>=level && this->idleCount<=30){ //領域展開!!
+		if(result>level && this->idleCount>=30){ //領域展開!!
 			alSourcePlay(this->src[1]);
 			alGetSourcei(this->src[1],AL_SOURCE_STATE,&(this->state[1]));
 
