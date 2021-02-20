@@ -1,0 +1,35 @@
+# Target labels
+ Extra
+ opencv_structured_light
+ Module
+# Source files and their labels
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/structured_light/include/opencv2/structured_light.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/structured_light/include/opencv2/structured_light/sinusoidalpattern.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/structured_light/include/opencv2/structured_light/structured_light.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/structured_light/include/opencv2/structured_light/graycodepattern.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/structured_light/src/sinusoidalpattern.cpp
+ Extra
+ opencv_structured_light
+ Module
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/structured_light/src/graycodepattern.cpp
+ Extra
+ opencv_structured_light
+ Module
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/structured_light/src/precomp.hpp
+ Extra
+ opencv_structured_light
+ Module
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/build/cvconfig.h
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/build/opencv2/opencv_modules.hpp

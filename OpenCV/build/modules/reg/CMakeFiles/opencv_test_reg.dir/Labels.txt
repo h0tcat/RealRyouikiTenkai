@@ -1,0 +1,17 @@
+# Target labels
+ Extra
+ opencv_reg
+ AccuracyTest
+# Source files and their labels
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/reg/test/test_main.cpp
+ Extra
+ opencv_reg
+ AccuracyTest
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/reg/test/test_reg.cpp
+ Extra
+ opencv_reg
+ AccuracyTest
+/home/h0tcat/デスクトップ/Folder/Programming/c++/RealRyouikiTenkai/OpenCV/opencv_contrib/modules/reg/test/test_precomp.hpp
+ Extra
+ opencv_reg
+ AccuracyTest
